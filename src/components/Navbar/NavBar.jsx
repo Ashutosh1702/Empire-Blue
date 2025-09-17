@@ -1,4 +1,5 @@
 import React, { useState, useCallback, memo } from 'react';
+import logo from '../../assets/logo1.webp';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
 const NavItem = memo(({ item, isActive, onClick }) => (
@@ -44,7 +45,7 @@ const Navbar = ({ currentPage, onNavigate }) => {
           {/* Logo Section */}
           <div className="flex-shrink-0 flex items-center">
             <img
-              src="/src/assets/logo1.webp"
+              src={logo}
               alt="Empire Blue"
               className="h-12 w-auto"
               width={200}
